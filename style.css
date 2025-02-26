@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav,ul{
+    width: 100vw;
+    padding: 10px;
+    background-color: blue;
+    list-style-type: none;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-weight: bolder;
+}
+#navbar li:nth-child(2){
+    position: relative;
+
+}
+#drop{
+    position: absolute;
+    padding: 15px;
+    background-color: aqua;
+    
+    left: 0;
+    display: none;
+
+}
+#navbar li:nth-child(2):hover #drop{
+    display: block;
+    cursor: pointer;
+}
